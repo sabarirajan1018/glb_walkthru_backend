@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors({ origin: process.env.CLIENT_URL || 'https://glb-walkthru-frontend.vercel.app' }));
+app.use(cors({ origin: "http://localhost:3000" || 'https://glb-walkthru-frontend.vercel.app' }));
 app.use(express.json());
 
 // Serve static GLB files
